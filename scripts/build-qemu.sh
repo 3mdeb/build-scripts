@@ -484,16 +484,16 @@ then
 
   cd "${WORK_FOLDER}"
 
-  if [ "${USER}" == "ilg" ]
-  then
-    # Shortcut for ilg, who has full access to the repo.
-    echo
-    echo "If asked, enter password for git clone"
-    git clone https://github.com/gnuarmeclipse/qemu.git gnuarmeclipse-${APP_LC_NAME}.git
-  else
+  # if [ "${USER}" == "ilg" ]
+  # then
+  #   # Shortcut for ilg, who has full access to the repo.
+  #   echo
+  #   echo "If asked, enter password for git clone"
+  #   git clone https://github.com/gnuarmeclipse/qemu.git gnuarmeclipse-${APP_LC_NAME}.git
+  # else
     # For regular read/only access, use the http url.
-    git clone http://github.com/gnuarmeclipse/qemu.git gnuarmeclipse-${APP_LC_NAME}.git
-  fi
+    git clone https://github.com/Jumperr-labs/qemu.git gnuarmeclipse-${APP_LC_NAME}.git
+  # fi
 
   # Change to the gnuarmeclipse branch. On subsequent runs use "git pull".
   cd "${GIT_FOLDER}"
