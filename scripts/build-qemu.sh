@@ -160,7 +160,7 @@ then
     then
       # Download helper script from SF git.
       echo "Downloading helper script..."
-      curl -L "https://github.com/gnuarmeclipse/build-scripts/raw/master/scripts/build-helper.sh" \
+      curl -L "https://github.com/Jumperr-labs/build-scripts/raw/master/scripts/build-helper.sh" \
       --output "${WORK_FOLDER}/scripts/build-helper.sh"
     fi
   fi
